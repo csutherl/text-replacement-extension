@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+
+    "name": "Text Replacement",
+    "description": "This extension replaces keywords with other text.",
+    "version": "1.0",
+
+    "content_scripts": [ {
+        "js": [ "jquery-1.11.0.min.js", "replace.js" ],
+        "matches": [ "<all_urls>" ],
+        "run_at": "document_end"
+    } ]
+}
