@@ -5,6 +5,10 @@
     "description": "This extension replaces keywords with other text.",
     "version": "1.0",
 
+    "permissions": [
+        "storage"
+    ],
+    "options_page": "options.html",
     "content_scripts": [ {
         "js": [ "jquery-1.11.0.min.js", "replace.js" ],
         "matches": [ "<all_urls>" ],
